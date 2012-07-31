@@ -4987,7 +4987,7 @@ case "$target" in
                 TARGET_ARCH="macosx386"
 		#CCAS=as
                 ;;
-            c++ | g++)
+            c++ | g++ | llvm-g++ | clang++)
                 TARGET_ARCH="macosx386"
                 ;;
             *)
@@ -5005,7 +5005,7 @@ echo "$as_me: error: \"sorry...compiler not supported\"" >&2;}
                 TARGET_ARCH="macosx"
 		CCAS=as
                 ;;
-            c++ | g++)
+            c++ | g++ | llvm-g++ | clang++)
                 TARGET_ARCH="macosx"
                 ;;
             *)
@@ -5023,7 +5023,7 @@ echo "$as_me: error: \"sorry...compiler not supported\"" >&2;}
                 TARGET_ARCH="sparcOS5"
 		CCAS=as
                 ;;
-            c++ | g++)
+            c++ | g++ | llvm-g++ | clang++)
                 TARGET_ARCH="gccsparcOS5"
                 ;;
             *)
